@@ -1,11 +1,14 @@
 import React from 'react'
 import heroImage from './images/rock-header.png'
-import { HeroSection } from './style'
+import { Title } from '../Title'
+import { HeroSection, ContentHero } from './style'
 
 const Hero = () => (
   <section>
     <HeroSection style={{ backgroundImage: `url(${heroImage})` }}>
-      <div className="content-hero"></div>
+      <ContentHero>
+        <Title />
+      </ContentHero>
     </HeroSection>
   </section>
 )
